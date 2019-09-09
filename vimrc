@@ -18,6 +18,7 @@ Plug 'janko/vim-test'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'andys8/vim-elm-syntax'
+Plug 'elmcast/elm-vim'
 Plug 'ryanoasis/vim-devicons'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -76,7 +77,7 @@ nmap <leader>f  <Plug>(coc-format-selected)
 " this is handled by LanguageClient [LC]
 let g:go_def_mapping_enabled = 0
 
-
+let g:elm_format_autosave = 1
 " -------------------------------------------------------------------------------------------------
 " coc.nvim default settings
 " -------------------------------------------------------------------------------------------------
