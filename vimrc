@@ -17,10 +17,12 @@ Plug 'mhinz/vim-grepper'
 Plug 'janko/vim-test'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'HerringtonDarkholme/yats.vim'
+Plug 'andys8/vim-elm-syntax'
 Plug 'ryanoasis/vim-devicons'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
+set number
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
   source ~/.vimrc_background
@@ -33,7 +35,7 @@ let g:airline_powerline_fonts = 1
 " NERDTREE
 nmap <C-n> :NERDTreeToggle<CR>
 
-let g:coc_node_path = '/home/pippo/.nvm/versions/node/v12.9.0/bin/node'
+let g:coc_node_path = '/home/livdevan/.nvm/versions/node/v12.9.0/bin/node'
 nnoremap <C-p> :<C-u>FZF<CR>
 let mapleader = ','
 
